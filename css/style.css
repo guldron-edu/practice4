@@ -497,9 +497,19 @@ img {
   transition: all 250ms linear;
 }
 
-.list-about__img-wrapper:hover {
+.list-about__img-wrapper:not(:last-child):hover {
   transform: scale(1.05);
   border: 5px solid #fed136;
+}
+
+.list-about__img {
+  height: 100%;
+  width: 100%;
+  transition: all 250ms linear;
+}
+.list-about__img-wrapper:hover .list-about__img {
+  height: 110%;
+  width: 110%;
 }
 
 .list-about__title {
